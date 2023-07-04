@@ -8,6 +8,13 @@ export const getAllCars = async () => {
   return carCollection.find().toArray();
 };
 
+export const getSingleCarDetails = async (id) =>{
+  const db = await DbConnect();
+  const carCollection = db.collection('CarData');
+  const query = {_id : new ObjectId(id)}
+  return carCollection.findOne(query);
+}
+
 // export const getProductByIdFromDb = async (id) => {
 //   const db = await DbConnect();
 //   const productsCollection = db.collection("products");
