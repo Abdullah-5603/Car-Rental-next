@@ -2,6 +2,8 @@ import React from 'react';
 import Slider from './Slider';
 import AllCars from './AllCars';
 import HiringCategory from './HiringCategory';
+import WhyChoose from './WhyChoose';
+import LocalRent from './LocalRent';
 
 export const metadata = {
     title: 'Car Rental || Home',
@@ -14,6 +16,8 @@ const HomePage = () => {
             <Slider/>
             <AllCars/>
             <HiringCategory/>
+            <WhyChoose/>
+            <LocalRent/>
         </div>
     );
 };

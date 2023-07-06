@@ -6,12 +6,12 @@ const { Meta } = Card;
 
 const SingleCar = ({ car, index }) => {
     return (
-        <Card key={index}
+        <Card className='w-96 md:w-64' key={index}
             // hoverable
-            style={{
-                width: 240,
-            }}
-            cover={<img className='h-[150px]' alt={car.name} src={car.image} />}
+            // style={{
+            //     width: 240,
+            // }}
+            cover={<img className='md:h-[150px] h-[220px]' alt={car.name} src={car.image} />}
         >
             <Meta className='text-xl' title={car.name} />
             <Link href={`/car-details/${car._id}`}><button className="bg-black text-white text-base rounded-md font-semibold uppercase py-2 w-full mt-3">Book Now</button></Link>
