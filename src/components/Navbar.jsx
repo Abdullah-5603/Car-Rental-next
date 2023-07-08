@@ -34,7 +34,7 @@ const Navbar = () => {
                         }
                     </div>
                 </div>
-                <p className="font-semibold md:text-2xl text-xl text-white">Car Rental</p>
+                <p className="font-semibold md:text-2xl text-xl text-white">Rent and Run</p>
             </div>
             <div className="hidden lg:flex text-white inset-0">
                 <ul className="px-1 flex space-x-8">

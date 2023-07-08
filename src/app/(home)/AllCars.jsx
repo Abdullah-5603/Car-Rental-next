@@ -8,7 +8,7 @@ const AllCars = async () => {
     return (
         <div className='grid grid-cols-1 md:grid-cols-4 gap-5 md:w-3/4'>
             {cars.map((car, index) => (
-                <SingleCar car={car} index={index}/>
+                <SingleCar key={index} car={car} index={index}/>
             ))}
         </div>
     );

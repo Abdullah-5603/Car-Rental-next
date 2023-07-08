@@ -23,7 +23,7 @@ const WhyChoose = () => {
                 </div>
                 <div>
                     <p className='font-bold text-lg mb-2 uppercase'>Ensure Security </p>
-                    <p className='text-sm'>Zoom rent a car always try to ensure top security for the passengers. For ensuring security zoom car rental always track the vehicle by using devices across the country.</p>
+                    <p className='text-sm'>Zoom rent a car always try to ensure top security for the passengers. For ensuring security zoom Rent and Run always track the vehicle by using devices across the country.</p>
                 </div>
             </div>
             <button className='font-bold text-lg py-3 px-5 uppercase text-white bg-black rounded-md'>learn more</button>

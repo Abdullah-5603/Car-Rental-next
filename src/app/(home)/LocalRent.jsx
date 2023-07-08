@@ -39,7 +39,7 @@ const LocalRent = () => {
         <div className='bg-yellow-400 bg-opacity-80 p-10 hover:bg-opacity-100'>
           <p className='text-3xl md:text-5xl font-bold mb-5'>
             <span className='text-black uppercase'>Welcome to the </span>
-            <span className='text-white'> Car Rental in {localPlace}</span>
+            <span className='text-white'> Rent and Run in {localPlace}</span>
           </p>
           <p className='text-white'>
             Zoom rent a car is popular in Bangladesh for quality service. We are offering a wide range of vehicle e.g. cars, micro bus, pick up, ambulance, truck, covered van and commercial vehicles for rent.

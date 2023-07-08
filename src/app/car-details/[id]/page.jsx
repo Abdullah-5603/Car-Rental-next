@@ -4,7 +4,7 @@ import bgImage from '../../../../public/title-box-default-bg.jpg'
 import CarDetails from './CarDetails';
 
 export const metaData = {
-    title : 'Car Rental || Car Details'
+    title : 'Rent and Run || Car Details'
 }
 
 const CarDetailsPage = async ({params : {id}}) => {
