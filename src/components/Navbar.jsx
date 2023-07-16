@@ -100,7 +100,7 @@ const Navbar = () => {
             <nav className={`z-10 hidden bg-white px-10 w-full md:flex justify-center ${scrollPosition > 250 && 'fixed top-0'}`}>
                 <div className="hidden lg:flex text-black">
                     <ul className="flex items-center">
-                        <li><NavLink pathname={path} href='/' name='Home' /></li>
+                        <li><NavLink pathName={path} currentPath='/' href='/'>Home</NavLink></li>
                         <li><Dropdown overlay={
                             <ul className="ant-dropdown-menu">
                                 {dailyRent.map((item) => (
@@ -110,7 +110,7 @@ const Navbar = () => {
                                 ))}
                             </ul>
                         } placement="bottom" arrow={true}>
-                            <Link className='p-3.5 hover:bg-gray-700 flex items-center hover:text-white' href="/daily-rent">Daily Rent <FaArrowDown className="mx-2" /></Link>
+                            <NavLink className='flex items-center' pathName={path} currentPath='/daily-rent' href="/daily-rent">Daily Rent <FaArrowDown className="mx-2" /></NavLink>
                         </Dropdown>
                         </li>
                         <li><Dropdown overlay={
@@ -122,7 +122,7 @@ const Navbar = () => {
                                 ))}
                             </ul>
                         } placement="bottom" arrow={true}>
-                            <Link className='p-3.5 hover:bg-gray-700 flex items-center hover:text-white' href="/monthly-rent">Monthly Rent <FaArrowDown className="mx-2" /></Link>
+                            <NavLink className='flex items-center' pathName={path} currentPath='/monthly-rent' href="/monthly-rent">Monthly Rent <FaArrowDown className="mx-2" /></NavLink>
                         </Dropdown>
                         </li>
                         <li><Dropdown overlay={
@@ -134,11 +134,11 @@ const Navbar = () => {
                                 ))}
                             </ul>
                         } placement="bottom" arrow={true}>
-                            <Link className='p-3.5 hover:bg-gray-700 flex items-center hover:text-white' href="/monthly-rent">Rent A vehicle <FaArrowDown className="mx-2" /></Link>
+                            <NavLink className='flex items-center' pathName={path} currentPath='/rent-a-vehicle' href="/rent-a-vehicle">Rent A vehicle <FaArrowDown className="mx-2" /></NavLink>
                         </Dropdown>
                         </li>
-                        <li><NavLink pathname={path} href='/about' name='About'/></li>
-                        <li><Link className='p-4 hover:bg-gray-700 hover:text-white' href='/contact'>Contact</Link></li>
+                        <li><NavLink pathName={path} currentPath='/about' href='/about'>About</NavLink></li>
+                        <li><NavLink pathName={path} currentPath='/contact' href='/contact'>Contact</NavLink></li>
                     </ul>
                 </div>
             </nav>
