@@ -15,6 +15,12 @@ export const getSingleCarDetails = async (id) =>{
   return carCollection.findOne(query);
 }
 
+export const postUser = async (data) => {
+  const db = await DbConnect()
+  const userCollection = db.collection('users')
+  return userCollection.insertOne(data)
+}
+
 // export const getProductByIdFromDb = async (id) => {
 //   const db = await DbConnect();
 //   const productsCollection = db.collection("products");

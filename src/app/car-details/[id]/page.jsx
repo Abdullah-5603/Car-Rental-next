@@ -1,6 +1,5 @@
 import { getSingleCarDetails } from '@/services/car.service';
 import React from 'react';
-import bgImage from '../../../../public/title-box-default-bg.jpg'
 import CarDetails from './CarDetails';
 
 export const metaData = {

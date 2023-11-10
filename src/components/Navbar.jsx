@@ -24,7 +24,7 @@ const Navbar = () => {
     const [currentPath, setCurrentPath] = useState('')
     // const path = useRouter();
     const path = usePathname()
-    console.log(path)
+    // console.log(path)
 
     //TODO: set path dynamically
     // let currentPath = '/';
@@ -139,6 +139,8 @@ const Navbar = () => {
                         </li>
                         <li><NavLink pathName={path} currentPath='/about' href='/about'>About</NavLink></li>
                         <li><NavLink pathName={path} currentPath='/contact' href='/contact'>Contact</NavLink></li>
+                        <li><NavLink pathName={path} currentPath='/login' href='/login'>Login</NavLink></li>
+                        <li><NavLink pathName={path} currentPath='/sign-up' href='/sign-up'>Sign Up</NavLink></li>
                     </ul>
                 </div>
             </nav>
